@@ -1,0 +1,52 @@
+<head>
+  <title>Brendan's Dashboard</title>
+</head>
+
+<body>
+	<header>
+		{{>loginButtons}}
+	</header>
+	{{>currentWeather}}
+	{{>tweetDeck}}
+</body>
+
+<template name="currentWeather">
+	<div class="currentWeatherContainer">
+		<h2>Currently in:</h2>
+		<h2>Boston, MA</h2>
+		<div class="precipitationForcast">
+			<img src='/{{dailyWeather.conditions}}.png' />{{dailyWeather.conditions}}</div>
+			<h3>Current Temp: {{dailyWeather.temp}}</h3>
+		<div class="extendedConditions">
+			<p>Low Temp: {{dailyWeather.lowTemp}}</p>
+			<p>{{dailyWeather.conditionDescription}}</p>
+			<p>Wind Speed: {{dailyWeather.windSpeed}}</p>
+		</div> <!--extendedConditions -->
+	</div> <!--currentWeatherContainer -->
+
+		{{>stockTemplate}}
+
+</template>
+
+
+<template name="tweetDeck">
+	<div class="tweetDeckContainer">
+	 	<h2>Latest Tweets</h2>
+	 	<ul>
+	 		{{#each liveTweets}}
+	 		<li><img src="{{tweeterImage}}" align="top" /><p><strong>{{tweeter}}</strong> : {{tweet}} {{inserted}}</p> </li>
+	 		{{/each}}
+	 	</ul>
+	</div>
+</template>
+
+<template name="stockTemplate">
+	<div class="stockPanelContainer">
+		<h2>Stock Quotes</h2>
+		<ul>
+			{{#each stock}}
+			<li><strong>{{companyName}}:</strong> {{stockPrice}}</li>
+			{{/each}}
+		</ul>
+	</div>
+</template>

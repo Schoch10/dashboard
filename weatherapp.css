@@ -1,0 +1,173 @@
+/* CSS declarations go here */
+
+body {
+	font-family: avenir;
+	margin:0;
+	padding:0;
+}
+
+header {
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+	height: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: lightgray;
+}
+
+#login-buttons {
+	float: right;
+	display: block;
+	margin-right: 10px;
+}
+
+.currentWeatherContainer {
+	height: auto;
+	width: 20%;
+	padding: 10px;
+	float: left;
+	padding-top: 0;
+	cursor: pointer;
+}
+
+.tweetDeckContainer {
+	margin-left: 5%;
+	margin: 0;
+	float: left;
+	margin-left: 10px;
+	background-color: white;
+	width: 50%;
+}
+
+.tweetDeckContainer h2 {
+	color: black;
+	text-align: left;
+	margin-top: 0;
+}
+
+.tweetDeckContainer ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.tweetDeckContainer li {
+	list-style-type: none;
+	padding-bottom: 15px;
+	border-bottom: 1px solid black;
+	color: black;
+	margin-bottom: 10px;
+	margin-left: 20px;
+
+}
+
+.tweetDeckContainer li p {
+	margin-top: 0;
+	vertical-align: middle;
+
+}
+
+.tweetDeckContainer li img {
+	display: inline-block;
+	max-height: 50px;
+	float: left;
+	margin-right: 10px;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 0;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 0;
+}
+
+h3 {
+	text-align: center;
+}
+
+.precipitationForcast {
+	width: 100%;
+	text-align: center;
+}
+
+.currentWeatherContainer img {
+	height: 50px;
+	margin: auto;
+	display: block;
+}
+
+.precipitationForcast img {
+	height: 50px;
+	margin: auto;
+	display: block;
+}
+
+.extendedConditions {
+	display: none;
+}
+
+.extendedConditions p {
+	text-align: center;
+}
+
+.extendedForcast {
+	display: block;
+}
+
+.extendedForcast p {
+	width: 100%;
+	text-align: center;
+}
+
+.dayContainer {
+	height: auto;
+	width: 180px;
+	border-right: 1px solid white;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+.stockPanelContainer {
+	float: left;
+ 	width: 25%;
+ 	font-size: 13px;
+ 	margin: 0;
+ }
+
+ .stockPanelContainer ul {
+ 	padding-left: 0;
+ 	margin-left: 10px;
+ }
+
+ .stockPanelContainer ul li {
+ 	list-style-type: none;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ }
+
+.stockPanelContainer h2 {
+	text-align: left;
+	margin-left: 10px;
+}
+@media (max-width: 768px) {
+
+	.currentWeatherContainer {
+		margin-left: 2%;
+		width: 98%;
+	}
+	.dayContainer {
+		margin-left: 2%;
+		width: 98%;
+		border-right: none;
+		border-bottom: 1px solid white;
+
+	}
+	.tweetDeckContainer {
+		max-width: 100%;
+	}
+}
+
